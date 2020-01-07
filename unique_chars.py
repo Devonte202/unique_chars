@@ -25,9 +25,9 @@ def uniqueChars(string):
     charCount = {}
     for char in string:
         if char in charCount:
-            charCount.char += 1
-        else charCount.char = 1
+            return False
+        else:
+            charCount[char] = 1
     for char in charCount:
         if len(char) > 1:
             return True
-    return False
